@@ -1,5 +1,4 @@
 import requests
-# import json
 from time import sleep
 
 # Copyright (C) Anasov <me@anasov.ly> - All Rights Reserved
