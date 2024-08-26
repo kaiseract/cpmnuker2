@@ -6,6 +6,11 @@ from time import sleep
 # Proprietary and confidential
 # Written by Anasov <me@anasov.ly>, 05, May, 2024.
 
+#############################################
+# DO NOT BUY THIS TOOL FROM ANY SCAMMER !!! #
+# OFFICIAL SELLER IS 'ANAS' AT TELEGRAM !!! #
+#############################################
+
 BASE_URL: str = "https://cpmnuker.anasov.ly/v2/api"
 
 class CPMNuker:
@@ -95,6 +100,13 @@ class CPMNuker:
         response_decoded = response.json()
         return response_decoded.get("ok")
 
+    def complete_missions(self) -> bool:
+        payload = { "account_auth": self.auth_token }
+        params = { "key": self.access_key }
+        response = requests.post(f"{BASE_URL}/complete_missions", params=params, data=payload)
+        response_decoded = response.json()
+        return response_decoded.get("ok")
+
     def unlock_apartments(self) -> bool:
         payload = { "account_auth": self.auth_token }
         params = { "key": self.access_key }
@@ -109,9 +121,35 @@ class CPMNuker:
         response_decoded = response.json()
         return response_decoded.get("ok")
     
-    def complete_missions(self) -> bool:
+    def unlock_brakes(self) -> bool:
         payload = { "account_auth": self.auth_token }
         params = { "key": self.access_key }
-        response = requests.post(f"{BASE_URL}/complete_missions", params=params, data=payload)
+        response = requests.post(f"{BASE_URL}/unlock_brakes", params=params, data=payload)
         response_decoded = response.json()
         return response_decoded.get("ok")
+    
+    def unlock_wheels(self) -> bool:
+        payload = { "account_auth": self.auth_token }
+        params = { "key": self.access_key }
+        response = requests.post(f"{BASE_URL}/unlock_wheels", params=params, data=payload)
+        response_decoded = response.json()
+        return response_decoded.get("ok")
+
+    def unlock_clothes(self) -> bool:
+        payload = { "account_auth": self.auth_token }
+        params = { "key": self.access_key }
+        response = requests.post(f"{BASE_URL}/unlock_equipments", params=params, data=payload)
+        response_decoded = response.json()
+        return response_decoded.get("ok")
+    
+    def unlock_cars(self) -> bool:
+        payload = { "account_auth": self.auth_token }
+        params = { "key": self.access_key }
+        response = requests.post(f"{BASE_URL}/unlock_cars", params=params, data=payload)
+        response_decoded = response.json()
+        return response_decoded.get("ok")
+
+#############################################
+# DO NOT BUY THIS TOOL FROM ANY SCAMMER !!! #
+# OFFICIAL SELLER IS 'ANAS' AT TELEGRAM !!! #
+#############################################

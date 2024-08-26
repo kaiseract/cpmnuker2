@@ -5,6 +5,11 @@
 # Proprietary and confidential
 # Written by Anasov <me@anasov.ly>, 05, May, 2024.
 
+#############################################
+# DO NOT BUY THIS TOOL FROM ANY SCAMMER !!! #
+# OFFICIAL SELLER IS 'ANAS' AT TELEGRAM !!! #
+#############################################
+
 import random
 import requests
 from time import sleep
@@ -151,7 +156,7 @@ if __name__ == "__main__":
             load_player_data(cpm)
             load_key_data(cpm)
             load_client_details()
-            choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+            choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
             console.print("[bold][cyan](01):[/cyan] [green]Account Delete ~ FREE[/green]")
             console.print("[bold][cyan](02):[/cyan] [green]Account Register ~ FREE[/green]")
             console.print("[bold][cyan](03):[/cyan] [green]Increase Money ~ 4K[/green]")
@@ -163,6 +168,10 @@ if __name__ == "__main__":
             console.print("[bold][cyan](09):[/cyan] [green]Maximize Drag Wins ~ 6K[/green]")
             console.print("[bold][cyan](10):[/cyan] [green]Unlock Slots ~ 7K[/green]")
             console.print("[bold][cyan](11):[/cyan] [green]Unlock Apartments ~ 10K[/green]")
+            console.print("[bold][cyan](12):[/cyan] [green]Unlock Brakes ~ 5K[/green]")
+            console.print("[bold][cyan](13):[/cyan] [green]Unlock Wheels ~ 6K[/green]")
+            console.print("[bold][cyan](14):[/cyan] [green]Unlock Clothes ~ 9K[/green]")
+            console.print("[bold][cyan](15):[/cyan] [green]Unlock Cars ~ 10K[/green]")
             console.print("[bold][cyan](0) :[/cyan] [red]Exit[/red]", end="\n\n")
             service = IntPrompt.ask(f"[bold][?] Select a Service [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
             if service == 0: # Exit
@@ -343,6 +352,63 @@ if __name__ == "__main__":
                     console.print("[bold yellow][!] Please try again.[/bold yellow]")
                     sleep(2)
                     continue
+            elif service == 12: # Unlock Brakes
+                console.print("[bold cyan][%] Unlocking Brakes[/bold cyan]: ", end=None)
+                if cpm.unlock_brakes():
+                    console.print("[bold green]SUCCESSFUL.[/bold green]")
+                    console.print("==================================")
+                    answ = Prompt.ask("[bold cyan][?] Do You want to Exit ?[/bold cyan]", choices=["y", "n"], default="n")
+                    if answ == "y": console.print(f"[bold yellow][!] Thank You for using our tool, please join our telegram channel[/bold yellow]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
+                    else: continue
+                else:
+                    console.print("[bold red]FAILED.[/bold red]")
+                    console.print("[bold yellow][!] Please try again.[/bold yellow]")
+                    sleep(2)
+                    continue
+            elif service == 13: # Unlock Wheels
+                console.print("[bold cyan][%] Unlocking Wheels[/bold cyan]: ", end=None)
+                if cpm.unlock_wheels():
+                    console.print("[bold green]SUCCESSFUL.[/bold green]")
+                    console.print("==================================")
+                    answ = Prompt.ask("[bold cyan][?] Do You want to Exit ?[/bold cyan]", choices=["y", "n"], default="n")
+                    if answ == "y": console.print(f"[bold yellow][!] Thank You for using our tool, please join our telegram channel[/bold yellow]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
+                    else: continue
+                else:
+                    console.print("[bold red]FAILED.[/bold red]")
+                    console.print("[bold yellow][!] Please try again.[/bold yellow]")
+                    sleep(2)
+                    continue
+            elif service == 14: # Unlock Clothes
+                console.print("[bold cyan][%] Unlocking Clothes[/bold cyan]: ", end=None)
+                if cpm.unlock_clothes():
+                    console.print("[bold green]SUCCESSFUL.[/bold green]")
+                    console.print("==================================")
+                    answ = Prompt.ask("[bold cyan][?] Do You want to Exit ?[/bold cyan]", choices=["y", "n"], default="n")
+                    if answ == "y": console.print(f"[bold yellow][!] Thank You for using our tool, please join our telegram channel[/bold yellow]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
+                    else: continue
+                else:
+                    console.print("[bold red]FAILED.[/bold red]")
+                    console.print("[bold yellow][!] Please try again.[/bold yellow]")
+                    sleep(2)
+                    continue
+            elif service == 15: # Unlock Cars
+                console.print("[bold cyan][%] Unlocking Cars[/bold cyan]: ", end=None)
+                if cpm.unlock_cars():
+                    console.print("[bold green]SUCCESSFUL.[/bold green]")
+                    console.print("==================================")
+                    answ = Prompt.ask("[bold cyan][?] Do You want to Exit ?[/bold cyan]", choices=["y", "n"], default="n")
+                    if answ == "y": console.print(f"[bold yellow][!] Thank You for using our tool, please join our telegram channel[/bold yellow]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
+                    else: continue
+                else:
+                    console.print("[bold red]FAILED.[/bold red]")
+                    console.print("[bold yellow][!] Please try again.[/bold yellow]")
+                    sleep(2)
+                    continue
             else: continue
             break
         break
+
+#############################################
+# DO NOT BUY THIS TOOL FROM ANY SCAMMER !!! #
+# OFFICIAL SELLER IS 'ANAS' AT TELEGRAM !!! #
+#############################################
