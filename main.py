@@ -407,8 +407,3 @@ if __name__ == "__main__":
             else: continue
             break
         break
-
-#############################################
-# DO NOT BUY THIS TOOL FROM ANY SCAMMER !!! #
-# OFFICIAL SELLER IS 'ANAS' AT TELEGRAM !!! #
-#############################################
