@@ -143,6 +143,7 @@ class CPMNuker:
         return response_decoded.get("ok")
     
     def unlock_cars(self) -> bool:
+        params = { "key": self.access_key }
         response = requests.post(f"{BASE_URL}/unlock_cars", params=params, data=payload)
         response_decoded = response.json()
         return response_decoded.get("ok")
